@@ -29,7 +29,7 @@ q:before,q:after {
 abbr,acronym { 
     border:0;   
 }
-a{text-decoration: none;}
+a{text-decoration: none;  color: #2c2b2a}
 
 .clearfix{clear:both;zoom:1} /*清除浮动*/
 .clearfix:after{clear:both;display:block;height:0;font-size:0;content:".";visibility:hidden;}
