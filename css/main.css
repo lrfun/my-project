@@ -42,8 +42,8 @@ body{background: #F1F2F3;font-family: "Microsoft YaHei","Arial";}
 .backTop{position: fixed;bottom: 20px;right: 20px;}
 
 /*弹出窗*/
-.dropBox{position: fixed;top:0px;left: 0;width: 100%;height: 100%}
-.dropBox .full{/*background: #000;*//*opacity: .2;filter:Alpha(opacity=20);*/width: 100%;height: 100%;background:rgba(1,1,1,.2);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#c20000000,endColorstr=#c2000000);}
+.dropBox{position: fixed;top:0px;left: 0;width: 100%;height: 100%;display: none;}
+.dropBox .full{/*background: #000;*//*opacity: .2;filter:Alpha(opacity=20);*/width: 100%;height: 100%;background:rgba(1,1,1,.3);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#c30000000,endColorstr=#c3000000);}
 
 .dropBox  .dropMian{z-index: 100;position: absolute;top:30%;left: 50%;background: #fff;width:400px;margin-left: -250px;text-align: center;padding-bottom: 50px; }
 .dropMian .closeBox{width: 100%;margin-top: 10px;}

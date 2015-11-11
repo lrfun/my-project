@@ -16,7 +16,7 @@ $(document).ready(function () {
 	$(".backTop").click(function(){$("html,body").animate({scrollTop:"0px"},500);});
 
 	// 登陆和注册弹出窗
-	$('.dropBox').hide();
+	$('.dropBox').hide();	
 	$('.regist').click(function(){
 		$('#login').fadeOut();			
 		$('#regist').fadeIn(500);
@@ -38,7 +38,7 @@ $(document).ready(function () {
 		$('#revisePassword').fadeIn(500);
 	})
 
-	//关闭弹出穿
+	//关闭弹出窗
 	$('.dropBox').find('.closeBox').click(function(){
 		$('.dropBox').fadeOut(500);
 	})
