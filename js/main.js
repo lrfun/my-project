@@ -51,4 +51,34 @@ $(document).ready(function () {
 		$('.contentBox .tabList:eq('+ index +')').show().siblings().hide();
 	})
 
+
+	 // 发送验证码
+		 $(".identifyCode").click(function(){
+		 	getcheckcode();
+		 })
+        var InterValObj; //timer变量，控制时间
+        var count = 60; //间隔函数，1秒执行
+        var curCount;//当前剩余秒数
+
+        function SetRemainTime() {
+            if (curCount == 0) {                
+                window.clearInterval(InterValObj);//停止计时器
+                $(".identifyCode").removeAttr("disabled");//启用按钮
+                $(".identifyCode").css('background',"#F4F4F4");
+                $(".identifyCode").val("重新发送验证码");
+            }
+            else {
+                curCount--;
+                $(".identifyCode").attr("disabled", "true");
+                $(".identifyCode").val(+ curCount + "秒后重新获取");
+                $(".identifyCode").css('background',"#d4d4d4");
+            }
+        }
+
+        function getcheckcode(){           
+            curCount = count;
+            InterValObj = window.setInterval(SetRemainTime, 1000); //启动计时器，1秒执行一次 
+        }       
+		
+
 })
