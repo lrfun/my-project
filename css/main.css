@@ -12,8 +12,8 @@ body{background: #F1F2F3;font-family: "Microsoft YaHei","Arial";}
 .sub_nav li:hover{background: #D04344; }
 .sub_nav li a{font-size:13px;color: #999 ;padding: 15px 120px 15px 40px;display: inline-block;width: 30px;}
 .sub_nav li a:hover{color: #fff;}
-.navBar .slide{background: #D04344;border-bottom-right-radius: 5px;border-top-right-radius: 5px;float: left;margin-top: 7px;}
-.slide img{display: inline-block;padding: 10px 10px;}
+.navBar .slide{background: #FF4466;border-bottom-right-radius: 5px;border-top-right-radius: 5px;float: left;margin-top: 10px;height: 35px;width: 40px;}
+.slide img{display: inline-block;/*padding:8px 8px 6px 8px;*/margin: 8px 8px 7px 6px;}
 .container{max-width: 960px;margin: 80px auto 0;}
 .container .content{width: 100%;}
 .content .tab{width: 100%;}
