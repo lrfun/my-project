@@ -68,15 +68,18 @@ $(document).ready(function () {
                 $(".identifyCode").val("重新发送验证码");
             }
             else {
-                curCount--;
-                $(".identifyCode").attr("disabled", "true");
-                $(".identifyCode").val(+ curCount + "秒后重新获取");
-                $(".identifyCode").css('background',"#d4d4d4");
+                curCount--;               
+                $(".identifyCode").val(+ curCount + "秒后重新获取");                
             }
         }
 
         function getcheckcode(){           
             curCount = count;
+            //设置button效果，开始计时
+            $(".identifyCode").attr("disabled", "true");
+            $(".identifyCode").val(+ curCount + "秒后重新获取");
+            $(".identifyCode").css('background',"#d4d4d4");
+
             InterValObj = window.setInterval(SetRemainTime, 1000); //启动计时器，1秒执行一次 
         }       
 		
