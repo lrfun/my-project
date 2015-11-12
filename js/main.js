@@ -40,7 +40,8 @@ $(document).ready(function () {
 
 	//关闭弹出窗
 	$('.dropBox').find('.closeBox').click(function(){
-		$('.dropBox').fadeOut(500);
+		$('.dropBox').fadeOut(500);	
+
 	})
 
 
