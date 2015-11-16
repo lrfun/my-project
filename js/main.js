@@ -19,28 +19,36 @@ $(document).ready(function () {
 	$('.dropBox').hide();	
 	$('.regist').click(function(){
 		$('#login').fadeOut();			
-		$('#regist').fadeIn(500);
+		$('#regist').fadeIn();
 	})
 	$('.login').click(function(){
 		$('#regist').fadeOut();			
-		$('#login').fadeIn(500);
+		$('#login').fadeIn();
+		window.clearInterval(InterValObj);
+		 $(".identifyCode").removeAttr("disabled");//启用按钮
+         $(".identifyCode").css('background',"#F4F4F4");
+		 $(".identifyCode").val("点击获取验证码");
 	})
 
 	//找回密码
 	$('.findPassword').click(function(){
 		$('#login').fadeOut();	
-		$('#findPassword').fadeIn(500);
+		$('#findPassword').fadeIn();
 	})
 
 	//修改密码
 	$('.revisePassword').click(function(){
 		$('#findPassword').fadeOut();	
-		$('#revisePassword').fadeIn(500);
+		$('#revisePassword').fadeIn();
 	})
 
 	//关闭弹出窗
 	$('.dropBox').find('.closeBox').click(function(){
-		$('.dropBox').fadeOut(500);	
+		$('.dropBox').fadeOut();	
+		 window.clearInterval(InterValObj);
+		 $(".identifyCode").removeAttr("disabled");//启用按钮
+         $(".identifyCode").css('background',"#F4F4F4");
+		 $(".identifyCode").val("点击获取验证码");
 	})
 
 
