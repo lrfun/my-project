@@ -41,7 +41,6 @@ $(document).ready(function () {
 	//关闭弹出窗
 	$('.dropBox').find('.closeBox').click(function(){
 		$('.dropBox').fadeOut(500);	
-
 	})
 
 
@@ -54,9 +53,9 @@ $(document).ready(function () {
 
 
 	 // 发送验证码
-		 $(".identifyCode").click(function(){
+		$(".identifyCode").click(function(){
 		 	getcheckcode();
-		 })
+		})
         var InterValObj; //timer变量，控制时间
         var count = 60; //间隔函数，1秒执行
         var curCount;//当前剩余秒数
