@@ -1,8 +1,29 @@
 $(document).ready(function () {
 
 	// 侧边导航
-	$(".slide").click(function(){			
-		$(this).parent(".navBar").find(".myNav").toggle(500);
+	// $(".slide").click(function(){			
+	// 	$(this).parent(".navBar").find(".myNav").toggle(500);
+	// })
+
+	var le=parseInt($('.slide').css('left'));
+	$('.slide').click(function(){			
+		if(le==0){								
+			$(this).animate({left:'190px'},500);		
+	        $('.container').animate({left:'190px'},500);
+	        $('.container').find('.full').fadeIn(500);	
+		}else{
+			alert()
+			$('.container').animate({left:'0px'},500);
+			$('.container').find('.full').fadeOut(500);
+			$('.slide').animate({left:'0px'},500);
+		}
+	})
+	$('.container').click(function(){					
+		if(le!=="0"){
+			$('.container').animate({left:'0px'},500);
+			$('.container').find('.full').fadeOut(500);
+			$('.slide').animate({left:'0px'},500);			
+		}
 	})
 	
 	// 回到顶部	
