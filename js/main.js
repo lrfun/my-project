@@ -11,8 +11,7 @@ $(document).ready(function () {
 			$(this).animate({left:'190px'},500);		
 	        $('.container').animate({left:'190px'},500);
 	        $('.container').find('.full').fadeIn(500);	
-		}else{
-			alert()
+		}else{			
 			$('.container').animate({left:'0px'},500);
 			$('.container').find('.full').fadeOut(500);
 			$('.slide').animate({left:'0px'},500);
