@@ -13,8 +13,8 @@ body{background: #F1F2F3;font-family: "Microsoft YaHei","Arial";}
 .sub_nav li a{font-size:13px;color: #999 ;padding: 15px 120px 15px 40px;display: inline-block;width: 30px;}
 .sub_nav li a:hover{color: #fff;}
 /*.navBar .slide{background: #FF4466;border-bottom-right-radius: 5px;border-top-right-radius: 5px;float: left;margin-top: 10px;height: 35px;width: 40px;}*/
-.slide{background: #FF4466;border-bottom-right-radius: 5px;border-top-right-radius: 5px;top: 10px;height: 35px;width: 40px;left: 0;position: fixed;z-index: 20}
-.slide img{display: inline-block;/*padding:8px 8px 6px 8px;*/margin: 8px 8px 7px 6px;}
+.slideIn,.slideOut{background: #FF4466;border-bottom-right-radius: 5px;border-top-right-radius: 5px;top: 10px;height: 35px;width: 40px;left: 0;position: fixed;z-index: 20}
+.slideIn img,.slideOut img{display: inline-block;/*padding:8px 8px 6px 8px;*/margin: 8px 8px 7px 6px;}
 .container{width:100%;margin: 0px auto 0;z-index:10;position:absolute;top:0;left: 0;background: #F1F2F3;}
 .container .full{background: rgba(0, 0, 0, 0.2);position: absolute;top:0;left: 0;height: 100%;width: 100%;z-index: 100;display: none;}
 

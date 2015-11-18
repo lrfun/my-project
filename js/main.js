@@ -6,24 +6,37 @@ $(document).ready(function () {
 	// })
 
 	var le=parseInt($('.slide').css('left'));
-	$('.slide').click(function(){			
-		if(le==0){								
-			$(this).animate({left:'190px'},500);		
-	        $('.container').animate({left:'190px'},500);
-	        $('.container').find('.full').fadeIn(500);	
-		}else{			
-			$('.container').animate({left:'0px'},500);
-			$('.container').find('.full').fadeOut(500);
-			$('.slide').animate({left:'0px'},500);
+	$('.slideIn').click(function(){			
+		if(le==0){
+	        showMeun()	
 		}
+	})	
+	$(".slideOut").click(function(){				
+		if(le!=="0"){
+	        hidewMeun()	
+		}
+		
 	})
 	$('.container').click(function(){					
 		if(le!=="0"){
-			$('.container').animate({left:'0px'},500);
-			$('.container').find('.full').fadeOut(500);
-			$('.slide').animate({left:'0px'},500);			
+			hidewMeun()			
 		}
+		
 	})
+	function showMeun(){
+		$('.slide').animate({left:'190px'},500);
+		$('.slideIn').hide();
+		$('.slideOut').show();		
+        $('.container').animate({left:'190px'},500);
+        $('.container').find('.full').fadeIn(500);	
+	}
+	function hidewMeun(){
+		$('.container').animate({left:'0px'},500);
+		$('.container').find('.full').fadeOut(500);
+		$('.slide').animate({left:'0px'},500);
+		$('.slideOut').hide();
+		$('.slideIn').show();
+	}
 	
 	// 回到顶部	
 	$(window).scroll(function () {
