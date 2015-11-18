@@ -6,6 +6,7 @@ $(document).ready(function () {
 	// })
 
 	var le=parseInt($('.slide').css('left'));
+	hidewMeun();
 	$('.slideIn').click(function(){			
 		if(le==0){
 	        showMeun()	
@@ -15,13 +16,11 @@ $(document).ready(function () {
 		if(le!=="0"){
 	        hidewMeun()	
 		}
-		
 	})
 	$('.container').click(function(){					
 		if(le!=="0"){
 			hidewMeun()			
 		}
-		
 	})
 	function showMeun(){
 		$('.slide').animate({left:'190px'},500);
