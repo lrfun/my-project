@@ -6,6 +6,7 @@ $(document).ready(function () {
 	// })
 
 	var le=parseInt($('.slide').css('left'));
+	var wid=$(".navBar").width();	
 	hidewMeun();
 	$('.slideIn').click(function(){			
 		if(le==0){
@@ -23,10 +24,10 @@ $(document).ready(function () {
 		}
 	})
 	function showMeun(){
-		$('.slide').animate({left:'190px'},500);
+		$('.slide').animate({left:wid},500);
 		$('.slideIn').hide();
 		$('.slideOut').show();		
-        $('.container').animate({left:'190px'},500);
+        $('.container').animate({left:wid},500);
         $('.container').find('.full').fadeIn(500);	
 	}
 	function hidewMeun(){
