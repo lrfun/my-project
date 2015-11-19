@@ -40,7 +40,7 @@ $(document).ready(function () {
 	
 	// 回到顶部	
 	$(window).scroll(function () {
-		if($(document).scrollTop() > 400){
+		if($(document).scrollTop() > 400){			
 			$(".backTop").fadeIn();
 		}else{
 			$(".backTop").fadeOut();
@@ -50,7 +50,7 @@ $(document).ready(function () {
 
 	// 登陆和注册弹出窗
 	$('.dropBox').hide();	
-	$('.regist').click(function(){
+	$('.regist').click(function(){		
 		$('#login').fadeOut();			
 		$('#regist').fadeIn();
 	})
