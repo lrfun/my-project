@@ -27,8 +27,8 @@ $(document).ready(function () {
 		$('.slide').animate({left:wid},500);
 		$('.slideIn').hide();
 		$('.slideOut').show();		
-        $('.container').animate({left:wid},500);
-        $('.container').find('.full').fadeIn(500);	
+    $('.container').animate({left:wid},500);
+    $('.container').find('.full').fadeIn(500);	
 	}
 	function hidewMeun(){
 		$('.container').animate({left:'0px'},500);
@@ -58,9 +58,9 @@ $(document).ready(function () {
 		$('#regist').fadeOut();			
 		$('#login').fadeIn();
 		window.clearInterval(InterValObj);
-		 $(".identifyCode").removeAttr("disabled");//启用按钮
-         $(".identifyCode").css('background',"#F4F4F4");
-		 $(".identifyCode").val("点击获取验证码");
+		  $(".identifyCode").removeAttr("disabled");//启用按钮
+      $(".identifyCode").css('background',"#F4F4F4");
+		  $(".identifyCode").val("点击获取验证码");
 	})
 
 	//找回密码
@@ -78,10 +78,10 @@ $(document).ready(function () {
 	//关闭弹出窗
 	$('.dropBox').find('.closeBox').click(function(){
 		$('.dropBox').fadeOut();	
-		 window.clearInterval(InterValObj);
-		 $(".identifyCode").removeAttr("disabled");//启用按钮
-         $(".identifyCode").css('background',"#F4F4F4");
-		 $(".identifyCode").val("点击获取验证码");
+		  window.clearInterval(InterValObj);
+		  $(".identifyCode").removeAttr("disabled");//启用按钮
+      $(".identifyCode").css('background',"#F4F4F4");
+		  $(".identifyCode").val("点击获取验证码");
 	})
 
 
