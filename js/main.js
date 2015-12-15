@@ -27,8 +27,8 @@ $(document).ready(function () {
 		$('.slide').animate({left:wid},500);
 		$('.slideIn').hide();
 		$('.slideOut').show();		
-    $('.container').animate({left:wid},500);
-    $('.container').find('.full').fadeIn(500);	
+	    $('.container').animate({left:wid},500);
+	    $('.container').find('.full').fadeIn(500);	
 	}
 	function hidewMeun(){
 		$('.container').animate({left:'0px'},500);
