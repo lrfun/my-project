@@ -2,7 +2,7 @@ $(document).ready(function () {
 
 	// 侧边导航
 	// $(".slide").click(function(){			
-	// 	$(this).parent(".navBar").find(".myNav").toggle(500);
+	// $(this).parent(".navBar").find(".myNav").toggle(500);
 	// })
 
 	var le=parseInt($('.slide').css('left'));
